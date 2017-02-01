@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="class.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+    <title>Number Guesser</title>
+  </head>
+  <body>
+    <header>
+      <h1><span class="number">Number</span><span class="guesser"> Guesser</span>
+      </h1>
+    </header>
+    <form>
+      <input type="number" placeholder="Enter your guess" name="guess" class="guest-guess">
+    </form>
+    <section>
+      <button id="userNumber">Guess</button>
+      <button id="clear">Clear</button>
+    </section>
+    <section class="last-guess">Your last guess was
+    </section>
+    <section>
+      <p class="userNum userGuess"></p>
+      <p class="prevGuess"></p>
+
+    </section>
+    <button class="reset">Reset</button>
+  </body>
+  <script type="text/javascript" src="main.js"></script>
+</html>
