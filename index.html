@@ -4,6 +4,7 @@
     <link href="class.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Number Guesser</title>
   </head>
   <body>
@@ -11,21 +12,27 @@
       <h1><span class="number">Number</span><span class="guesser"> Guesser</span>
       </h1>
     </header>
-    <form>
-      <input type="number" placeholder="Enter your guess" name="guess" class="guest-guess">
-    </form>
+    <section class="range">
+      <input type="number" placeholder="Enter minimum" class="min-range" id="minField">
+      <input type="number" placeholder="Enter maximum" class="max-range" id="maxField">
+    </section>
     <section>
-      <button id="userNumber">Guess</button>
-      <button id="clear">Clear</button>
+      <button id="userRange">Set a new range</button>
+    </section>
+      <input type="number" placeholder="Enter your guess" class="guest-guess" id="input-field">
+    <section>
+      <button id="userNumber" disabled="true">Guess</button>
+      <button id="clear" disabled="true">Clear</button>
     </section>
     <section class="last-guess">Your last guess was
     </section>
     <section>
-      <p class="userNum userGuess"></p>
-      <p class="prevGuess"></p>
+
+      <p class="userNum userGuess">?</p>
+      <p class="prevGuess last-guess">...</p>
 
     </section>
-    <button class="reset">Reset</button>
+    <button class="reset" id="reset-btn" disabled="true">Reset</button>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
