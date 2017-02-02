@@ -15,6 +15,10 @@ header {
   font-size: 1.9em;
 }
 
+input {
+  text-align: center;
+}
+
 button {
   background-color: #929497;
   border: none;
@@ -47,6 +51,7 @@ button:hover:enabled {
 
 .range {
   margin: 10px;
+  margin-bottom: 20px;
 }
 
 .number {
@@ -124,7 +129,10 @@ button:hover:enabled {
 
 .rangeButton {
   margin: 0px;
+  font-size: 1.3em;
+  margin-bottom: 40px;
 }
+
 
 @media screen and (max-width: 530px) {
   header {
@@ -135,14 +143,7 @@ button:hover:enabled {
   h1 {
     padding-top: 10px
   }
-  .guest-guess {
-    width: 70%;
-    margin: 25px;
-    height: 1.5em;
-    font-family: "Open Sans";
-    font-size: 1.5em;
-    outline: none;
-  }
+
   button {
     background-color: #929497;
     border: none;
@@ -153,30 +154,54 @@ button:hover:enabled {
     display: inline-block;
     font-size: 1em;
     border-radius: 30px;
-    width: 70%;
+    width: 85%;
     margin: 10px;
     word-wrap: break-word;
     font-family: "Open Sans";
   }
+
   button#reset-btn {
     margin: 5px;
   }
+
+  button#userNumber {
+    margin-bottom: 0px;
+  }
+
   input#maxField {
     font-size: .9em;
-    height: 1.1em;
-    width: 35%;
+    height: 1.2em;
+    width: 40%;
   }
+
   input#minField {
     margin-right: 5px;
     font-size: .9em;
-    height: 1.1em;
-    width: 35%;
+    height: 1.2em;
+    width: 40%;
   }
+  
+  input#input-field {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 85%;
+  }
+
+  .guest-guess {
+    width: 70%;
+    margin: 25px;
+    height: 1.5em;
+    font-family: "Open Sans";
+    font-size: 1.5em;
+    outline: none;
+  }
+
+  .range {
+    margin-top: 0px;
+  }
+
   #userRange {
     margin-bottom: 0px;
     margin-top: 0px;
-  }
-  input#input-field {
-    margin-top: 40px;
-    margin-bottom: 10px;
+    font-size: .85em;
   }
