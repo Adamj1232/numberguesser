@@ -90,3 +90,8 @@ function disRange(){
     rangeButton.disabled=true;
   };
 };
+
+
+// clearButton.addEventListener('click', function(){
+//   rangeButton.disabled=false;
+// });
